@@ -6,7 +6,7 @@ const pool = new Pool({
     password:'1234',
     user: 'postgres'
 })  
-
+//comentario feito no ipad
   
   pool.query("SELECT idpedido ,  (max(hora::time) - min(hora::time)) as atraso FROM exemplo group by idpedido")
     .then((res) =>{
